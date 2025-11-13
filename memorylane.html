@@ -2921,8 +2921,10 @@ Jaise dil keh raha ho — 'tu sach mein aaya hai, sirf mere liye hi.",
         });
 
         nextButton.addEventListener("click", function () {
-          window.location.href = "cake.html"; // Adjust this to your next surprise page URL
-        });
+  console.log('Next button clicked — navigating to cake.html');
+  // explicit, relative navigation
+  window.location.assign('./cake.html');
+});
 
         // Scroll animations with GSAP
         gsap.from(".header", {
